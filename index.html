@@ -1,84 +1,317 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Planned Planthood</title>
-  </head>
-  <body>
-Planned Planthood
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Test</title>
+    </head>
+    <body>
+      <header>
+        <div class="logo-wrap">
+          <img src="/Assets/images/logo.svg" alt="logotype" class="logo">
+          <h3>Planned Planthood</h3>
+        </div>
 
-Hem
-Historik
-Tips
-Kontakt
+        <button class="mobile-toggle" 
+          aria-controls="primary-navigation" aria-expanded="false">
+          <!--
+          <span class="sr-only">Menu</span>-->
+        </button>
+          
+        <nav>
+          <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+            <li class="active"><a href="">Hem</a></li>
+            <li><a href="#">Historik</a></li>
+            <li><a href="#">Tips</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </header>
 
-Uppskattade växter
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.
+      <main class="flex-container">
+        <section class="hero-section">
+          <div class="hero-heading">
+            <h2>Uppskattade växter</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
+          </div>
+          <div class="grid-hero">
+            <img src="/Assets/images/189-2048x1536.jpg" alt="" class="item-a">
+            <img src="/Assets/images/189-2048x1536.jpg" alt="" class="item-b">
+            <img src="/Assets/images/324-3888x2592.jpg" alt="" class="item-c">
+            <img src="/Assets/images/631-2513x1670.jpg" alt="" class="item-d">
+            <img src="/Assets/images/248-3872x2592.jpg" alt="" class="item-e">
+            <img src="/Assets/images/498-5000x3333.jpg" alt="" class="item-f">
+          </div>
+        </section>
 
-Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!
+        <section class="news-letter">
+          <div class="icon-circle">
+            <img src="/Assets/images/icon-seedling-2.svg" alt="" class="icon-seed">
+          </div>
+          <h3>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h3>
+          <label for="email" aria-hidden="true"></label>
+          <div class="email-field">
+            <input type="text" id="email" name="email" required
+            minlength="10" maxlength="50" size="30" placeholder="email@domain.com" class="input-field">
+            <input type="submit" class="btn-send">
+          </div>
+        </section>
+      
+        <section class="card-container"> 
+          <article class="card-1">
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+              <div class="chip outline bg-red">Blommor</div>
+              <div class="chip outline bg-edible">Ätbart</div>
+              <div class="chip outline bg-green">Grönska</div>
+            </div>
+            <h3 class="card-heading">Gurka</h3>
+            <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+            <div class="card-avatar">
+              <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+            </div>
+            <p class="card-name">Coolio</p>
+            <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Blommor
-Ätbart
-Grönska
-Gurka
-Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.
-Coolio
-2024-04-01
+          <article class="card-2">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-sunloving">Solälskande</div>
+                <div class="chip outline bg-easy">Lättodlad</div>
+                <div class="chip outline bg-edible">Ätbart</div>
+              </div>
+              <h3 class="card-heading">Tomat</h3>
+              <p class="card-text"> En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Anna Odlare</p>
+              <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Solälskande
-Lättodlat
-Ätbart
-Tomat
-En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.
-Anna Odlare
-2024-12-05
+          <article class="card-3">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-decorative">Dekorativ</div>
+                <div class="chip outline bg-colorful">Färgstark</div>
+                <div class="chip outline bg-robust">Tålig</div>
+                <div class="chip outline bg-red">Blommor</div>
+              </div>
+            <h3 class="card-heading">Pelargon</h3>
+            <p class="card-text">  En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
+            <div class="card-avatar">
+              <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+            </div>
+            <p class="card-name">Blomsterkalle</p>
+            <p class="card-date">2024-12-03</p>
+            </div>
+          </article>
 
-Dekorativ
-Färgstark
-Tålig
-Blommor
-Pelargon
-En vacker och lättskött blomma som trivs både inne och ute under sommaren.
-Blomsterkalle
-2024-12-03
+          <article>
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-air">Kryddor</div>
+                <div class="chip outline bg-fragrant">Doftande</div>
+                <div class="chip outline bg-sunloving">Solälskande</div>
+              </div>
+              <h3 class="card-heading">Basilika</h3>
+              <p class="card-text">    En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Blomsterkalle</p>
+              <p class="card-date">2024-12-03</p>  
+              </div>
+          </article>
+    
+          <article class="card-5">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-fast">Snabbväxande</div>
+                <div class="chip outline bg -green">Grönska</div>
+                <div class="chip outline bg-edible">Ätbart</div>
+              </div>
+              <h3 class="card-heading">Sallad</h3>
+              <p class="card-text">   Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Grönis</p>
+              <p class="card-date">2024-12-06</p>
+            </div>
+          </article>
 
-Kryddor
-Doftande
-Solälskande
-Basilika
-En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.
-Krydd-Malin
-2024-12-07
+          <article class="card-6">
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+                <div class="chips-wrapper">
+                  <div class="chip outline bg-air">Luftfuktande</div>
+                  <div class="chip outline bg-easy">Lättodlad</div>
+                  <div class="chip outline bg-edible">Ätbart</div>
+                </div>
+                <h3 class="card-heading">Ormbunke</h3>
+                <p class="card-text">   En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
+                <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+                </div>
+                <p class="card-name">Naturvännen</p>
+                <p class="card-date">2024-12-08</p>
+            </div>
+          </article>
 
-Snabbväxande
-Ätbart
-Grönska
-Sallad
-Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.
-Grönis
-2024-12-06
+          <article class="card-7">
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+              <div class="chip outline bg-red">Blommor</div>
+              <div class="chip outline bg-edible">Ätbart</div>
+              <div class="chip outline bg-green">Grönska</div>
+            </div>
+              <h3 class="card-heading">Rödbeta</h3>
+              <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Coolio</p>
+              <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Luftfuktande
-Grönska
-Dekorativ
-Ormbunke
-En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.
-Naturvännen
-2024-12-08
+          <article class="card-8">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+            <div class="chips-wrapper">
+              <div class="chip outline bg-red">Blommor</div>
+              <div class="chip outline bg-edible">Ätbart</div>
+              <div class="chip outline bg-green">Grönska</div>
+            </div>
+              <h3 class="card-heading">Kaktus</h3>
+              <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+              <div class="card-avatar">
+                  <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Coolio</p>
+              <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Våra tidigare odlingar
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
-Planterade plantor
+          <article class="card-9">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+            <div class="chips-wrapper">
+              <div class="chip outline bg-red">Blommor</div>
+              <div class="chip outline bg-edible">Ätbart</div>
+              <div class="chip outline bg-green">Grönska</div>
+            </div>
+            <h3 class="card-heading">Rosor</h3>
+            <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+            <div class="card-avatar">
+              <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+            </div>
+            <p class="card-name">Coolio</p>
+            <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?
-Telefon: 020-1234567
-info@plannedplant.com
+          <article class="card-10">
+            <div class="card-inline-wrapper">
+            <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+            <div class="chips-wrapper">
+              <div class="chip outline bg-red">Blommor</div>
+              <div class="chip outline bg-edible">Ätbart</div>
+              <div class="chip outline bg-green">Grönska</div>
+            </div>
+            <h3 class="card-heading">Morot</h3>
+            <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+            <div class="card-avatar">
+              <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+            </div>
+            <p class="card-name">Coolio</p>
+            <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
 
-Hem
-Historik
-Tips
-Kontakt
-  </body>
-</html>
+          <article class="card-11">
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-red">Blommor</div>
+                <div class="chip outline bg-edible">Ätbart</div>
+                <div class="chip outline bg-green">Grönska</div>
+              </div>
+              <h3 class="card-heading">Persilja</h3>
+              <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Coolio</p>
+              <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
+    
+          <article class="card-12">
+            <div class="card-inline-wrapper">
+              <img src="/Assets/images/cucumber.svg" alt="" class="card-image">
+              <div class="chips-wrapper">
+                <div class="chip outline bg-red">Blommor</div>
+                <div class="chip outline bg-edible">Ätbart</div>
+                <div class="chip outline bg-green">Grönska</div>
+              </div>
+              <h3 class="card-heading">Dill</h3>
+              <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+              <div class="card-avatar">
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar">
+              </div>
+              <p class="card-name">Coolio</p>
+              <p class="card-date">2024-12-05</p>
+            </div>
+          </article>
+        </section>
+
+        <section class="info-section">
+          <div class="icon-circle">
+              <img src="/Assets/images/icon-seedling.svg" alt="" class="icon-seed">
+          </div>
+          <h3>Våra tidigare odlingar</h3>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?
+          <button class="info-btn">Planterade plantor</button>
+        </section>
+      </main>
+
+      <footer>
+        <div class="logo-wrap-footer">
+          <img src="/Assets/images/logo-footer.svg" alt="logotype" class="logo-fot">
+          <h3>Planned Planthood</h3>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+        <div class="contact-phone">
+          <img src="/Assets/images/phone.svg" alt="">
+          <p>Telefon: 020-1234567</p>
+        </div>
+        <div class="contact-email">
+          <img src="/Assets/images/icon-email.svg" alt="">
+          <p>info@plannedplant.com</p>
+        </div>
+        
+        <section class="footer-nav">
+          <ul>
+            <li>Hem</li>
+            <li>Historik</li>
+            <li>Tips</li>
+            <li>Kontakt</li>
+          </ul>
+        </section>
+
+      </footer>
+      <script src="style.js"></script>
+    </body>
+  </html>
