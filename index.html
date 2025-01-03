@@ -1,41 +1,38 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="sv">
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="style.css" />
-      <title>Test</title>
+      <title>Planned Planthood</title>
     </head>
     <body>
-
       <div class="grid-container">
         <header >
           <div class="navbar">
-          <div class="logo-wrap">
-            <img src="/Assets/images/logo.svg" alt="logotype" class="logo">
-            <h3>Planned Planthood</h3>
+            <div class="logo-wrap">
+              <img src="/Assets/images/logo.svg" alt="logotype" class="logo">
+              <h3>Planned Planthood</h3>
+            </div>
+            <div class="mobile-toggle" 
+              aria-controls="primary-navigation" aria-expanded="false">
+              <span class="sr-only">Menu</span>
+            </div>
+            <nav>
+              <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+                <li class="active"><a href="">Hem</a></li>
+                <li><a href="#">Historik</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Kontakt</a></li>
+              </ul>
+            </nav>
           </div>
-          <div class="mobile-toggle" 
-            aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only">Menu</span>
-          </div>
-          <nav>
-            <ul id="primary-navigation" data-visible="false" class="primary-navigation">
-              <li class="active"><a href="">Hem</a></li>
-              <li><a href="#">Historik</a></li>
-              <li><a href="#">Tips</a></li>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
-          </nav>
-        </div>
         </header>
 
         <main>
           <section class="hero-section">
-            <div class="hero-heading">
               <h2>Uppskattade växter</h2>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, corporis ipsum.</p>
-          </div>
             <div class="grid-hero">
               <img src="/Assets/images/cactus.jpg" alt="" class="img-a">
               <img src="/Assets/images/189-2048x1536.jpg" alt="" class="img-b">
@@ -43,311 +40,294 @@
               <img src="/Assets/images/631-2513x1670.jpg" alt="" class="img-d">
               <img src="/Assets/images/248-3872x2592.jpg" alt="" class="img-e">
               <img src="/Assets/images/498-5000x3333.jpg" alt="" class="img-f">
-              </div>
+            </div>
           </section>
 
           <section class="news-container">
             <div class="news-section">
-            <div class="news-icon"> 
-              <div class="icon-circle">
-                <img src="/Assets/images/icon-planting.svg" alt="" class="icon-plant">
+                <div class="icon-circle">
+                  <img src="/Assets/images/icon-planting.svg" alt="" class="icon-plant">
+                </div>
+              <div class="news-content">
+                <h3>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h3>
+                <div class="email-field">
+                  <label for="email" aria-hidden="true"></label>
+                  <input type="text" id="email" name="email" required
+                  minlength="10" maxlength="50" size="30" placeholder="email@domain.com" class="input-field">
+                  <input type="submit" value="Skicka" class="btn-send">
+                </div>
               </div>
             </div>
-            <div class="news-content">
-              <div class="news-text">
-                <h3>Anmäl dig till vårt nyhetsbrev så du inte missar en utsådd!</h3></div>
-              <div class="email-field">
-                <label for="email" aria-hidden="true"></label>
-                <input type="text" id="email" name="email" required
-                minlength="10" maxlength="50" size="30" placeholder="email@domain.com" class="input-field">
-                <input type="submit" value="Skicka" class="btn-send">
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        <div class="container">
-          <section class="card-grid">
-            <article class="card-wrapper">
-              <img src="/Assets/images/cucumber.svg" alt="" class="card-image box1">
-              <div class="chips-wrapper box2">
-                <div class="chip outline bg-easy"><p>Lättodlad</p></div>
-                <div class="chip outline bg-edible"><p>Ätbart</p></div>
-                <div class="chip outline bg-robust"><p>Tålig</p></div>
-              </div>
-              <div class="box3">
-                <h3 class="card-heading">Gurka</h3>
-                <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
-              </div>
-              <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar-img box4">
-              <div class="box5">  
-                <p class="card-name">Coolio</p>
-                <p class="card-date">2024-04-01</p>
-              </div>
-            </article>
+          <div class="container">
+            <section class="card-grid">
+              <article class="card-wrapper">
+                <img src="/Assets/images/cucumber.svg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-easy"><p>Lättodlad</p></div>
+                  <div class="chip outline bg-edible"><p>Ätbart</p></div>
+                  <div class="chip outline bg-robust"><p>Tålig</p></div>
+                </div>
+                <div class="box3">
+                  <h3 class="card-heading">Gurka</h3>
+                  <p class="card-text">Gurka växer snabbt, är enkel att odla och ger mängder med gurkor, bara man är noga med vattning, omplantering, duschning och gödsling.</p>
+                </div>
+                <img src="/Assets/images/avatar_cucumber.png" alt="" class="avatar-img box4">
+                <div class="box5">  
+                  <p class="card-name">Coolio</p>
+                  <p class="card-date">2024-04-01</p>
+                </div>
+              </article>
      
-  
-          <article class="card-wrapper">
-            <img src="/Assets/images/tomato.jpg" alt="" class="card-image box1">
-            <div class="chips-wrapper box2">
-              <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
-              <div class="chip outline bg-decorative"><p>Dekorativ</p></div>
-              <div class="chip outline bg-easy"><p>Lättodlad</p></div>   
-            </div>  
-            <div class="box3">
-              <h3 class="card-heading">Tomat</h3>
-              <p class="card-text">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
-            </div>
-            <img src="/Assets/images/avatar_tomta.png" alt="" class="avatar-img box4">
-            <div class="box5">
-              <p class="card-name">Anna Odlare</p>
-              <p class="card-date">2024-12-05</p>
-            </div>
-          </article>
+              <article class="card-wrapper">
+                <img src="/Assets/images/tomato.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
+                  <div class="chip outline bg-decorative"><p>Dekorativ</p></div>
+                  <div class="chip outline bg-easy"><p>Lättodlad</p></div>   
+                </div>  
+                <div class="box3">
+                  <h3 class="card-heading">Tomat</h3>
+                  <p class="card-text">En perfekt grönsak att odla på balkongen eller i trädgården. Ger riklig skörd under sommaren.</p>
+                </div>
+                <img src="/Assets/images/avatar_tomta.png" alt="" class="avatar-img box4">
+                <div class="box5">
+                  <p class="card-name">Anna Odlare</p>
+                  <p class="card-date">2024-12-05</p>
+                </div>
+              </article>
 
-          <article class="card-wrapper">
-            <img src="/Assets/images/geranio.jpg" alt="" class="card-image box1">
-              <div class="chips-wrapper box2">
-                <div class="chip outline bg-decorative"><p>Dekorativ</p></div>
-                <div class="chip outline bg-colorful"><p>Färgstark</p></div>
-                <div class="chip outline bg-robust"><p>Tålig</p></div>
-                <div class="chip outline bg-red"><p>Blommor</p></div>
-              </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/geranio.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-decorative"><p>Dekorativ</p></div>
+                  <div class="chip outline bg-colorful"><p>Färgstark</p></div>
+                  <div class="chip outline bg-robust"><p>Tålig</p></div>
+                  <div class="chip outline bg-red"><p>Blommor</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Pelargon</h3>
                   <p class="card-text">En vacker och lättskött blomma som trivs både inne och ute under sommaren.</p>
                 </div>
                 <img src="/Assets/images/avatar_pelagon.png" alt="" class="avatar-img box4">
-                  <div class="box5">
+                <div class="box5">
                   <p class="card-name">Blomsterkalle</p>
                   <p class="card-date">2024-12-03</p>
                 </div>
-          </article>
-   
+              </article>
+      
+              <article class="card-wrapper">
+                <img src="/Assets/images/basil.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-air"><p>Kryddor</p></div>
+                  <div class="chip outline bg-fragrant"><p>Doftande</p></div>
+                  <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
+                </div>
+                <div class="box3">
+                  <h3 class="card-heading">Basilka</h3>
+                  <p class="card-text">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
+                </div>
+                <img src="/Assets/images/avatar_basilika.png" alt="" class="avatar-img box4">
+                <div class="box5">
+                  <p class="card-name">Krydd-Malin</p>
+                  <p class="card-date">2024-12-07</p>
+                </div>
+              </article>
   
-          <article class="card-wrapper">
-            <img src="/Assets/images/basil.jpg" alt="" class="card-image box1">
-              <div class="chips-wrapper box2">
-                <div class="chip outline bg-air"><p>Kryddor</p></div>
-                <div class="chip outline bg-fragrant"><p>Doftande</p></div>
-                <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
-              </div>
-              <div class="box3">
-                <h3 class="card-heading">Basilka</h3>
-                <p class="card-text">En fantastisk krydda för pastarätter och sallader. Trivs bäst i ett soligt fönster.</p>
-              </div>
-              <img src="/Assets/images/avatar_basilika.png" alt="" class="avatar-img box4">
-              <div class="box5">
-                <p class="card-name">Krydd-Malin</p>
-                <p class="card-date">2024-12-07</p>
-              </div>
-          </article>
-  
-          <article class="card-wrapper">
-            <img src="/Assets/images/lettuce.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-fast"><p>Snabbväxande</p></div>
-                    <div class="chip outline bg-edible"><p>Ätbart</p></div>
-                    <div class="chip outline bg-green"><p>Grönska</p></div>
-                  </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/lettuce.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-fast"><p>Snabbväxande</p></div>
+                  <div class="chip outline bg-edible"><p>Ätbart</p></div>
+                  <div class="chip outline bg-green"><p>Grönska</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Sallad</h3>
                   <p class="card-text">Sallad är en av de enklaste grönsakerna att odla och ger snabba resultat för färska måltider.</p>
-                  </div>
-                 
-                      <img src="/Assets/images/avatar_lettuce.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_lettuce.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Grönis</p>
                   <p class="card-date">2024-12-06</p>
-                  </div>
+                </div>
+              </article>
   
-          </article>
-  
-          <article class="card-wrapper">
-            <img src="/Assets/images/fern.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-air"><p>Luftfuktande</p></div>
-                    <div class="chip outline bg-green"><p>Grönska</p></div>
-                      <div class="chip outline bg-fragrant"><p>Doftande</p></div> 
-                  </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/fern.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-air"><p>Luftfuktande</p></div>
+                  <div class="chip outline bg-green"><p>Grönska</p></div>
+                  <div class="chip outline bg-fragrant"><p>Doftande</p></div> 
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Ormbunke</h3>
                   <p class="card-text">En klassisk växt som passar perfekt i badrummet eller på skuggiga platser.</p>
-                  </div>
-                
-                      <img src="/Assets/images/avatar_fern.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_fern.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Naturvännen</p>
                   <p class="card-date">2024-12-08</p>
-                  </div>
-    
-          </article>
-  
-          <article class="card-wrapper">
-                  <img src="/Assets/images/dill.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-air"><p>Kryddor</p></div>
-                      <div class="chip outline bg-edible"><p>Ätbart</p></div>
-                      <div class="chip outline bg-fragrant"><p>Doftande</p></div>
-                  </div>
-                  <div class="box3">
+                </div>
+              </article>
+      
+              <article class="card-wrapper">
+                <img src="/Assets/images/dill.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-air"><p>Kryddor</p></div>
+                  <div class="chip outline bg-edible"><p>Ätbart</p></div>
+                  <div class="chip outline bg-fragrant"><p>Doftande</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Dill</h3>
                   <p class="card-text">Dill är en traditionell örtkrydda med gröna, aromatiska och finflikiga bladverk.</p>
-                  </div>
-                      <img src="/Assets/images/avatar_dill.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_dill.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Veganista</p>
                   <p class="card-date">2024-12-07</p>
-                  </div>
-          </article>
+                </div>
+              </article>
   
-          <article class="card-wrapper">
-                  <img src="/Assets/images/aloe.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
-                    <div class="chip outline bg-robust"><p>Tålig</p></div>
-                    <div class="chip outline bg-decorative"><p>Dekorativ</p></div>
-                    
-                  </div>
+              <article class="card-wrapper">
+                <img src="/Assets/images/aloe.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
+                  <div class="chip outline bg-robust"><p>Tålig</p></div>
+                  <div class="chip outline bg-decorative"><p>Dekorativ</p></div>  
+                </div>
                   <div class="box3">
                   <h3 class="card-heading">Aloe Vera</h3>
                   <p class="card-text">Aloe veran är en fetbladig växt som uppskattar att stå i väldränerad jord.</p>
-                  </div>
-               
-                      <img src="/Assets/images/avatar_aloe.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div> 
+                <img src="/Assets/images/avatar_aloe.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Helaren</p>
                   <p class="card-date">2024-12-10</p>
-                  </div>
-          </article>
+                </div>
+              </article>
   
-          <article class="card-wrapper">
-                  <img src="/Assets/images/tulip.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                      <div class="chip outline bg-red"><p>Blommor</p></div>
-                      <div class="chip outline bg-colorful"><p>Färgstark</p></div>
-                      <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
-                  </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/tulip.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                    <div class="chip outline bg-red"><p>Blommor</p></div>
+                    <div class="chip outline bg-colorful"><p>Färgstark</p></div>
+                    <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Tulpan</h3>
                   <p class="card-text">Tulpaner tillhör våra mest uppskattade vårblommande lökar och är en växt i familjen liljeväxter.</p>
-                  </div>
-             
-                      <img src="/Assets/images/avatar_tulip.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_tulip.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Flora</p>
                   <p class="card-date">2024-12-01</p>
-                  </div>
-          </article>
+                </div>
+              </article>
   
-          <article class="card-wrapper">
-                  <img src="/Assets/images/pepper.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-easy"><p>Lättodlad</p></div>
-                      <div class="chip outline bg-edible"><p>Ätbart</p></div>
-                      <div class="chip outline bg-colorful"><p>Färgstark</p></div>
-                  </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/pepper.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-easy"><p>Lättodlad</p></div>
+                  <div class="chip outline bg-edible"><p>Ätbart</p></div>
+                  <div class="chip outline bg-colorful"><p>Färgstark</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Paprika</h3>
                   <p class="card-text">Paprika är en härligt färggrann grönsak som är enkel att odla själv.</p>
-                  </div>
-          
-                      <img src="/Assets/images/avatar_pepper.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_pepper.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Spice</p>
                   <p class="card-date">2024-12-11</p>
-                  </div>
-    
-          </article>
+                </div>
+              </article>
   
-          <article class="card-wrapper">
-            <img src="/Assets/images/parsley.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-fast"><p>Snabbväxande</p></div>
-                      <div class="chip outline bg-edible"><p>Ätbart</p></div>
-                      <div class="chip outline bg-air"><p>Kryddor</p></div>
-                  </div>
-                  <div class="box3">
+              <article class="card-wrapper">
+                <img src="/Assets/images/parsley.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-fast"><p>Snabbväxande</p></div>
+                  <div class="chip outline bg-edible"><p>Ätbart</p></div>
+                  <div class="chip outline bg-air"><p>Kryddor</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Persilja</h3>
                   <p class="card-text">Persilja är en ört med lätt syrlig mineralsmak som påminner om spenat och järn. </p>
-                  </div>
-         
-                      <img src="/Assets/images/avatar_parsley.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_parsley.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Gröna Anna</p>
                   <p class="card-date">2024-12-15</p>
-                  </div>
-          </article>
-  
-          <article class="card-wrapper">
-                  <img src="/Assets/images/cactus2.jpg" alt="" class="card-image box1">
-                  <div class="chips-wrapper box2">
-                    <div class="chip outline bg-easy"><p>Lättodlad</p></div>
-                    <div class="chip outline bg-robust"><p>Tålig</p></div>
-                    <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
-                  </div>
-                  <div class="box3">
+                </div>
+              </article>
+      
+              <article class="card-wrapper">
+                <img src="/Assets/images/cactus2.jpg" alt="" class="card-image box1">
+                <div class="chips-wrapper box2">
+                  <div class="chip outline bg-easy"><p>Lättodlad</p></div>
+                  <div class="chip outline bg-robust"><p>Tålig</p></div>
+                  <div class="chip outline bg-sunloving"><p>Solälskande</p></div>
+                </div>
+                <div class="box3">
                   <h3 class="card-heading">Kaktus</h3>
                   <p class="card-text"> Kaktusar gillar ljus och tål gassande sol även om de utvecklas vackrast i silande ljus.</p>
-                  </div>
-         
-                      <img src="/Assets/images/avatar_cactus.png" alt="" class="avatar-img box4">
-                      <div class="box5">
+                </div>
+                <img src="/Assets/images/avatar_cactus.png" alt="" class="avatar-img box4">
+                <div class="box5">
                   <p class="card-name">Green rebel</p>
                   <p class="card-date">2024-12-05</p>
-                  </div>
-          </article>
-      </section>
-      </div>
+                </div>
+              </article>
+            </section>
+          </div>
 
           <section class="info-container">
             <div class="info-section">
               <div class="icon-circle">
-                  <img src="/Assets/images/icon-seedling.svg" alt="" class="icon-seed">
+                <img src="/Assets/images/icon-seedling.svg" alt="" class="icon-seed">
               </div>
               <div class="flex-right">
-              <div class="info-down">
-                <h3>Våra tidigare odlingar</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?</p></div>
-              <div class="way-down">
-                <button class="info-btn">Planterade plantor</button>  
-              </div>     
+                <div class="info-down">
+                  <h3>Våra tidigare odlingar</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione quia eos pariatur deserunt veritatis. Tenetur, ipsum! Iusto delectus ipsam esse pariatur rerum eveniet nostrum, dolor distinctio nam quaerat doloribus?</p>
+                </div>
+                <div class="way-down">
+                  <button class="info-btn">Planterade plantor</button>  
+                </div>     
               </div>
             </div>  
           </section>
-
         </main>
+
         <footer class="footer-container">
           <div class="footer-flex">
-          <section class="footer-left">
-            <div class="logo-wrap-footer">
-              <img src="/Assets/images/logo-footer.svg" alt="logotype" class="logo-fot">
-              <h3>Planned Planthood</h3>
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
-            <div class="contact-phone">
-              <img src="/Assets/images/icon-phone.svg" alt="ikon med telefon symbol">
-              <p>Telefon: 020-1234567</p>
-            </div>
-            <div class="contact-email">
-            <img src="/Assets/images/icon-email.svg" alt="ikon med email symbol">
-              <p>info@plannedplant.com</p>
-            </div>
-          </section>
-          <section class="footer-right">
-            <ul>
-              <li>Hem</li>
-              <li>Historik</li>
-              <li>Tips</li>
-              <li>Kontakt</li>
-            </ul>
-          </section>
-        </div>
+            <section class="footer-left">
+              <div class="logo-wrap-footer">
+                <img src="/Assets/images/logo-footer.svg" alt="logotype" class="logo-fot">
+                <h3>Planned Planthood</h3>
+              </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, veniam ducimus aut sint atque ullam alias perspiciatis fuga. Consequuntur nesciunt ea corrupti aperiam fugit inventore ratione earum. Iure, eius molestias?</p>
+              <div class="contact-phone">
+                <img src="/Assets/images/icon-phone.svg" alt="ikon med telefon symbol">
+                <p>Telefon: 020-1234567</p>
+              </div>
+              <div class="contact-email">
+                <img src="/Assets/images/icon-email.svg" alt="ikon med email symbol">
+                <p>info@plannedplant.com</p>
+              </div>
+            </section>
+            <section class="footer-right">
+              <ul>
+                <li>Hem</li>
+                <li>Historik</li>
+                <li>Tips</li>
+                <li>Kontakt</li>
+              </ul>
+            </section>
+          </div>
         </footer>
       </div>
   
-  
-
       <script src="style.js"></script>
     </body>
   </html>
