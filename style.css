@@ -1,10 +1,9 @@
 
-  /* To do
+/* To do 
+Rensa koden 
+Skapa ul>li på för kort, chips och bilder 
+planera för map javascript*/  
 
-  Rensa Css
-  skapa avståndsvariabler
-  Kontrollera kod
-  Push to github */
   *,
   *::before,
   *::after {
@@ -167,8 +166,14 @@
     line-height: 1;
   }
 
-  h2 {
+  h1 {
     font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+  }
+
+  h2 {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-bold);
   }
 
   h3 {
@@ -335,21 +340,18 @@
     width: 100%;
     margin: var(--margin-small);
     display: grid;
-    grid-template-columns: 1tr 1tr;
-    grid-template-rows: repeat(3, 1tr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     border: 1rem solid white;
-    max-width: 1000px;
-    width: 100%;
 
     @media screen and (min-width: 600px) {
-      grid-template-columns: repeat(3, 1tr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   .img-a {
     grid-area: 1 / 1 / 2 / 2;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 800px) {
@@ -361,7 +363,6 @@
   .img-b {
     grid-area: 1 / 2 / 2 / 3;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 800px) {
@@ -372,7 +373,6 @@
   .img-c {
     grid-area: 2 / 1 / 3 / 2;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 600px) {
@@ -387,7 +387,6 @@
   .img-d {
     grid-area: 2 / 2 / 3 / 3;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 600px) {
@@ -402,7 +401,6 @@
   .img-e {
     grid-area: 3 / 1 / 4 / 2;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 600px) {
@@ -413,7 +411,6 @@
   .img-f {
     grid-area: 3 / 2 / 4 / 3;
     aspect-ratio: 1 / 1;
-    width: 100%;
     object-fit: cover;
 
     @media screen and (min-width: 600px) {
@@ -626,7 +623,8 @@
     justify-content: center;
     align-items: center;
     height: 30px;
-    padding-inline: var(--padding-x-small);
+    padding-inline: var(--padding-small);
+    color: var(--clr-neutral-100);   
   }
 
   .chip:hover {
@@ -639,68 +637,46 @@
 
   .bg-red {
     background-color: var(--clr-flower);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-flower);
   }
 
   .bg-edible {
     background-color: var(--clr-edible);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-edible);
   }
 
   .bg-green {
     background-color: var(--clr-green);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-green);
   }
 
   .bg-sunloving {
     background-color: var(--clr-sunloving);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-sunloving);
   }
 
   .bg-easy {
     background-color: var(--clr-easy);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-easy);
   }
 
   .bg-decorative {
     background-color: var(--clr-decorative);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-decorative);
   }
 
   .bg-colorful {
     background-color: var(--clr-colorful);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-colorful);
   }
 
   .bg-robust {
     background-color: var(--clr-robust);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-robust);
   }
 
   .bg-air {
     background-color: var(--clr-air);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-air);
   }
 
   .bg-fragrant {
     background-color: var(--clr-fragrant);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-fragrant);
   }
 
   .bg-fast {
     background-color: var(--clr-fast);
-    color: var(--clr-neutral-100);
-    border: 3px solid var(--clr-fast);
   }
     /* Info section*/
 
